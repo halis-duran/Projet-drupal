@@ -1,0 +1,59 @@
+/* Reset */
+
+html , body {
+    margin:0; padding:0;
+}
+
+
+/**************************/
+
+header {
+   height:50vh; /* viewport height */
+    position:relative; /* pour pouvoir utiliser des positions absolues sur les enfants de ce header */
+    background-image: url(images/paysage.jpg);
+    background-size:cover; background-position:bottom;
+}
+
+#menu {
+    position:absolute;
+    bottom:0px; left:0px;
+    background-color:black;
+    height:50px;
+    width:100%;
+    text-align:center;
+}
+
+#menu a , footer a {
+    color:orange;
+    text-decoration: none;
+    display:inline-block;
+    height:100%;
+    line-height:50px;
+    margin-left:25px; margin-right: 25px;
+    font-family: sans-serif;
+    font-weight:bold;
+    font-size:24px;
+}
+
+footer a {
+    margin-left:25px; margin-right:0;
+    font-size:12px; /* Prend le dessus sur la même règle précédemment déclarée */
+}
+
+main {
+    max-width:600px;
+    margin-left:auto; margin-right:auto;
+    margin-top:50px;
+    min-height:50vh;
+}
+
+article {
+    border-bottom:3px solid orange;
+    margin-bottom:50px;
+    padding-bottom:25px;
+}
+
+footer {
+    background-color:black; height:50px;
+    margin-top:50px;
+}

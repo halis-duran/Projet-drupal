@@ -1,0 +1,11 @@
+CREATE TABLE `sessions` (
+  `id` int(3) NOT NULL,
+  `login` text NOT NULL,
+  `motdepasse` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE `sessions`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `sessions`
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT;
